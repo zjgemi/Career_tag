@@ -1,0 +1,98 @@
+﻿body {
+  margin:0px;
+  background-image:none;
+  background-color:rgba(255, 204, 51, 1);
+  position:static;
+  left:auto;
+  height: 100%;
+  width: 100%;
+  margin-left:0;
+  margin-right:0;
+  text-align:left;
+}
+#u23 {
+  margin: 70px;
+  width:813px;
+  height:255px;
+  font-family:'HannotateSC-W7', 'Hannotate SC Bold', 'Hannotate SC';
+  font-weight:700;
+  font-style:normal;
+  text-align:center;
+}
+#u23_text {
+  border-width:0px;
+  width:813px;
+  white-space:nowrap;
+}
+
+/*隐藏掉我们模型的checkbox*/
+.my_protocol .input_agreement_protocol {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  display: none;
+}
+ /*未选中时*/        
+.my_protocol .input_agreement_protocol+span {
+  font-family:'ArialMT', 'Arial';
+  font-weight:400;
+  font-style:normal;
+  font-size:39px;
+  color:#ffffff;
+  text-align:center;
+  line-height:normal;
+  border-width:0px;
+  width:198px;
+  height:78px;
+  background:inherit;
+  background-color:rgba(102, 102, 153, 1);
+  border:none;
+  border-radius:15px;
+  -moz-box-shadow:15px 15px 15px rgba(0, 0, 0, 0.349019607843137);
+  -webkit-box-shadow:15px 15px 15px rgba(0, 0, 0, 0.349019607843137);
+  box-shadow:15px 15px 15px rgba(0, 0, 0, 0.349019607843137);
+  font-family:'HannotateSC-W5', 'Hannotate SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:42px;
+  display: inline-block;
+  margin: 15px
+}
+/*选中checkbox时,修改背景*/            
+.my_protocol .input_agreement_protocol:checked+span {
+  background-color:rgba(153, 0, 51, 1);
+}
+.attrs_mat {
+  margin: 30px
+}
+.attrs_row {
+  display: inline
+}
+.attr_text {
+  border-width:0px;
+  position:relative;
+  left:6px;
+  top:9px;
+  width:186px;
+  word-wrap:break-word;
+}
+.submit {
+  border-width:0px;
+  width:237px;
+  height:99px;
+  background:inherit;
+  background-color:rgba(153, 0, 51, 1);
+  border:none;
+  border-radius:15px;
+  -moz-box-shadow:15px 15px 15px rgba(0, 0, 0, 0.349019607843137);
+  -webkit-box-shadow:15px 15px 15px rgba(0, 0, 0, 0.349019607843137);
+  box-shadow:15px 15px 15px rgba(0, 0, 0, 0.349019607843137);
+  font-family:'HannotateSC-W5', 'Hannotate SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:42px;
+  margin: 15px;
+  position: relative;
+  left: 330px;
+  top: 150px;
+}

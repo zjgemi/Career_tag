@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>自己测</title>
+  <script src="common.js"></script>
+  <link href="css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+  <link href="css/default.css" type="text/css" rel="stylesheet"/>
+  <link href="css/othertest.css" type="text/css" rel="stylesheet"/>
+  <script>
+    function checknum() {
+    	var cnt = 0;
+    	for ( var i = 0; i < document.forms["attrform"]["attr"].length; ++i ) {
+    		if ( document.forms["attrform"]["attr"][i].checked == true ) cnt++;
+    		}
+    	if(cnt != 5) {
+    		alert( '请选择5个选项' );
+    		return false;
+    	}
+    	else {
+    		return true;
+    	}
+    }
+  </script>
+</head>
+
+<body>
+
+<div id="u23" class="ax_default heading_1">
+  <div id="u23_text" class="text ">
+    <p style="font-size:70px;"><span style="color:#003399;">请选择5个符合你的词</span></p><p style="font-size:45px;"><span style="color:#990000;">*重新点击词语可以取消选择哦</span></p><p style="font-size:45px;"><span style="color:#990000;"><br></span></p>
+  </div>
+</div>
+
+<form name="attrform" onsubmit="return checknum()" action="SelfTest" method="POST">
+<div class="attrs_mat">
+  <script>
+  for(var i = 0; i < 10; i++) {
+    document.write("<div class='attrs_row'>");
+    for(var j = 4*i; j < 4*i+4; j++) {
+      document.write("<label class='my_protocol'>");
+      document.write("<input class='input_agreement_protocol' type='checkbox' name='attr' value='"+j+"' />");
+      document.write("<span>");
+      document.write("<div class='attr_text'>");
+      document.write("<p><span>"+attr[j]+"</span></p>");
+      document.write("</div>");
+      document.write("</span>");
+      document.write("</label>");
+    }
+    document.write("</div>");
+    document.write("<br>");
+  }
+  </script>
+</div>
+<input class="submit ax_default primary_button" type="submit" value="提交" />
+</form>
+
+</body>
+
+</html>

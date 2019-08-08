@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+  <link href="css/default.css" type="text/css" rel="stylesheet"/>
+  <link href="css/result.css" type="text/css" rel="stylesheet"/>
+  <script src="common.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script>
+    $.ajax({
+      url: 'GetResult',
+      dataType: 'json',
+      success: function(res) {
+        document.getElementById("title").innerHTML = res.name+"的鉴定报告";
+        document.title = res.name+"的鉴定报告";
+        document.getElementById("ntest").innerHTML = "现在共有"+res.sumothers+"位好友为我测评";
+        document.getElementById("u146_div").onclick = function(){location.href="othertest.html?name="+res.name};
+        document.getElementById("u146_div").innerHTML = "帮"+res.name+"测";
+        var fs = 70;
+        for(i = 0; i < Math.min(res.tt.length,5); i++){
+          if(i>0 && res.tt[i].others!=res.tt[i-1].others) fs-=15;
+          document.getElementsByName("tt")[i].innerHTML = attr[res.tt[i].attr]
+          document.getElementsByName("tt")[i].style = "font-size:"+fs+"px"
+        }
+        var fs = 70;
+        for(i = 0; i < Math.min(res.ft.length,5); i++){
+          if(i>0 && res.ft[i].others!=res.ft[i-1].others) fs-=15;
+          document.getElementsByName("ft")[i].innerHTML = attr[res.ft[i].attr]
+          document.getElementsByName("ft")[i].style = "font-size:"+fs+"px"
+        }
+        for(i = 0; i < Math.min(res.tf.length,5); i++){
+          document.getElementsByName("tf")[i].innerHTML = attr[res.tf[i].attr]
+          document.getElementsByName("tf")[i].style = "font-size:50px"
+        }
+        for(i = 0; i < Math.min(res.ff.length,5); i++){
+          document.getElementsByName("ff")[i].innerHTML = attr[res.ff[i].attr]
+          document.getElementsByName("ff")[i].style = "font-size:50px"
+        }
+      }
+    })
+  </script>
+</head>
+
+<body>
+
+    <!-- Unnamed (Image) -->
+    <div id="u142" class="ax_default image">
+      <img id="u142_img" class="img " src="images/result/u3.jpg"/>
+    </div>
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u143" class="ax_default heading_1">
+      <div id="u143_text" class="text ">
+        <p><span id="title"></span></p>
+      </div>
+    </div>
+
+
+    <!-- Unnamed (Rectangle) -->
+    <div id="u145" class="ax_default heading_1">
+      <div id="u145_text" class="text ">
+        <p><span id="ntest"></span></p><p><span><br></span></p>
+      </div>
+    </div>
+
+    <!-- Unnamed (Table) -->
+    <table border="1" id="u147" class="ax_default">
+      <tr>
+        <td></td>
+        <td>
+          <div class="ax_default cell">
+            <div class="text cell_text">
+              <p><span>自己眼中的我</span></p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="ax_default cell">
+            <div class="text cell_text">
+              <p><span>自己未知的我</span></p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="ax_default cell">
+            <div class="text cell_text" style="margin:210px 0px">
+              <p><span>他人眼中的我</span></p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="ax_default cell">
+            <div class="cell_text">
+              <p>
+                <span name="tt"></span>
+                <span name="tt"></span>
+                <span name="tt"></span>
+                <span name="tt"></span>
+                <span name="tt"></span>
+              </p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="ax_default cell">
+            <div class="cell_text">
+              <p>
+                <span name="ft"></span>
+                <span name="ft"></span>
+                <span name="ft"></span>
+                <span name="ft"></span>
+                <span name="ft"></span>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="ax_default cell">
+            <div class="text cell_text" style="margin:210px 0px">
+              <p><span>他人未知的我</span></p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="ax_default cell">
+            <div class="cell_text">
+              <p>
+                <span name="tf"></span>
+                <span name="tf"></span>
+                <span name="tf"></span>
+                <span name="tf"></span>
+                <span name="tf"></span>
+              </p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="ax_default cell">
+            <div class="cell_text">
+              <p>
+                <span name="ff"></span>
+                <span name="ff"></span>
+                <span name="ff"></span>
+                <span name="ff"></span>
+                <span name="ff"></span>
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Unnamed (Rectangle) -->
+    <button class='text ax_default primary_button' id='u146_div'></button>
+
+    <button class="text ax_default primary_button" id="u79_div" onclick="location.href='login.html'">我要测</button>
+
+</body>
+</html>

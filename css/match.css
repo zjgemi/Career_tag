@@ -1,0 +1,143 @@
+﻿body {
+  margin:0px;
+  background-image:none;
+  background-color:rgba(255, 204, 51, 1);
+  position:static;
+  left:auto;
+  height: 100%;
+  width: 100%;
+  margin-left:0;
+  margin-right:0;
+  text-align:left;
+}
+#u77_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:980px;
+  height:980px;
+}
+#u77 {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:150px;
+  width:980px;
+  height:980px;
+}
+#u78 {
+  border-width:0px;
+  position:absolute;
+  left:186px;
+  top:137px;
+  width:591px;
+  height:300px;
+  font-family:'HannotateSC-W7', 'Hannotate SC Bold', 'Hannotate SC';
+  font-weight:700;
+  font-style:normal;
+  text-align:center;
+}
+#u78_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:591px;
+  white-space:nowrap;
+}
+#u79_div {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:237px;
+  height:99px;
+  background:inherit;
+  background-color:rgba(153, 0, 51, 1);
+  border:none;
+  border-radius:15px;
+  -moz-box-shadow:15px 15px 15px rgba(0, 0, 0, 0.349019607843137);
+  -webkit-box-shadow:15px 15px 15px rgba(0, 0, 0, 0.349019607843137);
+  box-shadow:15px 15px 15px rgba(0, 0, 0, 0.349019607843137);
+  font-family:'HannotateSC-W5', 'Hannotate SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:42px;
+  border-width:0px;
+  position:absolute;
+  left:327px;
+  top:1334px;
+  width:237px;
+  height:99px;
+  font-family:'HannotateSC-W5', 'Hannotate SC';
+  font-weight:400;
+  font-style:normal;
+  font-size:42px;
+}
+#u80 {
+  border-width:0px;
+  position:absolute;
+  left:186px;
+  top:970px;
+  width:591px;
+  height:339px;
+  font-family:'HannotateSC-W7', 'Hannotate SC Bold', 'Hannotate SC';
+  font-weight:700;
+  font-style:normal;
+  font-size:216px;
+  color:#990000;
+  text-align:center;
+}
+#u80_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:591px;
+  word-wrap:break-word;
+  font-size:90px;
+}
+#u81 {
+  border-width:0px;
+  position:absolute;
+  left:276px;
+  top:410px;
+  width:393px;
+  height:516px;
+  font-family:'HannotateSC-W7', 'Hannotate SC Bold', 'Hannotate SC';
+  font-weight:700;
+  font-style:normal;
+  font-size:216px;
+  color:#990000;
+  text-align:center;
+}
+#u81_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:393px;
+  white-space:nowrap;
+}
+#u82 {
+  border-width:0px;
+  position:absolute;
+  left:279px;
+  top:800px;
+  width:363px;
+  height:150px;
+  font-family:'HannotateSC-W7', 'Hannotate SC Bold', 'Hannotate SC';
+  font-weight:700;
+  font-style:normal;
+  font-size:60px;
+  text-align:center;
+}
+#u82_text {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:363px;
+  white-space:nowrap;
+}
